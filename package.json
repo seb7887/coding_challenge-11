@@ -1,0 +1,36 @@
+{
+  "name": "coding_challenge-11",
+  "version": "1.0.0",
+  "description": "This coding challenge is all about **working with a designer and building a project for a client as if you just started a development company**. You will have to meet a deadline and finish a website (which you will be able to add to your portfolio) based on the design requirements of the client. A very valuable skill to learn. Let's get started!",
+  "main": "index.js",
+  "scripts": {
+    "watch:sass": "node-sass sass/main.scss css/style.css -w",
+    "compile:sass": "node-sass sass/main.scss css/style.comp.css",
+    "concat:css": "concat -o css/style.concat.css css/icon-font.css css/style.comp.css",
+    "prefix:css": "postcss --use autoprefixer -b 'last 10 versions' css/style.concat.css -o css/style.prefix.css",
+    "compress:css": "node-sass css/style.prefix.css css/style.css --output-style compressed",
+    "build:css": "npm-run-all compile:sass concat:css prefix:css compress:css"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/seb7887/coding_challenge-11.git"
+  },
+  "keywords": [
+    "html",
+    "css",
+    "sass"
+  ],
+  "author": "Sebastian Matias Segura",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/seb7887/coding_challenge-11/issues"
+  },
+  "homepage": "https://github.com/seb7887/coding_challenge-11#readme",
+  "dependencies": {
+    "autoprefixer": "^9.3.1",
+    "concat": "^1.0.3",
+    "node-sass": "^4.10.0",
+    "npm-run-all": "^4.1.3",
+    "postcss-cli": "^6.0.1"
+  }
+}
