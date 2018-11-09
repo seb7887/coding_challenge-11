@@ -1,0 +1,61 @@
+.btn-primary {
+  &,
+  &:link,
+  &:visited {
+    padding: 1.5rem 5rem;
+    text-decoration: none;
+    font-weight: 600;
+    background: $color-primary;
+    color: $color-pale-blue;
+    border-radius: 10rem;
+    cursor: pointer;
+    transition: all .2s;
+  }
+
+  &:hover {
+    transform: translateY(-0.3rem);
+    box-shadow: 0 1rem 2rem rgba($color-dark-cyan, .2);
+
+    &::after {
+      transform: scaleX(1.4) scaleY(1.6);
+      opacity: 0;
+    }
+  }
+
+  &:active,
+  &:focus {
+    outline: none;
+    transform: translateY(-0.1rem);
+    box-shadow: 0 0.5rem rgba($color-dark-cyan, .2);
+  }
+}
+
+
+
+.btn-secondary {
+  &,
+  &:link,
+  &:visited {
+    height: 1.5rem;
+    padding: 0.25rem 1.5rem;
+    text-decoration: none;
+    color: $color-primary;
+    border: 1px solid $color-primary;
+    border-radius: 10rem;
+    cursor: pointer;
+    transition: all .2s;
+  }
+
+  &:hover,
+  &:visited {
+    background: $color-primary;
+    color: $color-pale-blue;
+    box-shadow: 0 1rem 2rem rgba($color-dark-cyan, .15);
+    transform: translateY(-2px);
+  }
+
+  &:active {
+    box-shadow: 0 1rem 2rem rgba($color-dark-cyan, .15);
+    transform: translateY(0);
+  }
+}
