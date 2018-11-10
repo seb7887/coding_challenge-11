@@ -1,4 +1,4 @@
-.btn-primary {
+.btn {
   &,
   &:link,
   &:visited {
@@ -28,9 +28,12 @@
     transform: translateY(-0.1rem);
     box-shadow: 0 0.5rem rgba($color-dark-cyan, .2);
   }
+
+  &--animated {
+    animation: moveInBottom 0.5s ease-out 0.75s;
+    animation-fill-mode: backwards;
+  }
 }
-
-
 
 .btn-secondary {
   &,
