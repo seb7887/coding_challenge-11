@@ -2,3 +2,7 @@
   margin: 0 auto;
   max-width: 32rem;
 }
+
+.col-1-of-2 {
+  width: calc((100% - 2 * #{$gutter-horizontas}) / 2);
+}

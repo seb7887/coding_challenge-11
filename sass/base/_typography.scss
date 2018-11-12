@@ -7,5 +7,35 @@ body {
 .heading {
   font-family: "Poppins", sans-serif;
   font-weight: 700;
-  font-size: 2.5rem;
+  font-size: 3rem;
+  transition: all .2s;
+
+  &--animated {
+    animation: moveInLeft .5s ease-out .75s;
+    animation-fill-mode: backwards;
+  }
+}
+
+.paragraph {
+  &--animated {
+    animation: moveInRight .5s ease-out .75s;
+    animation-fill-mode: backwards;
+  }
+}
+
+.icon {
+  margin: 0 .5rem;
+  width: 2rem;
+  height: 1.8rem;
+}
+
+.value {
+  margin: 0;
+  font-size: 4.5rem;
+  font-weight: 700;
+}
+
+.detail {
+  font-size: 1.2rem;
+  opacity: .7;
 }
