@@ -1,0 +1,14 @@
+.wav {
+  background: rgba(0, 255, 255, .1);
+  clip-path: url(#wave-top1);
+  height: 55rem;
+  width: 100vw;
+  // transform: translateX(-3rem);
+
+  display: flex;
+  flex-direction: row;
+}
+
+.feature-text {
+  margin-top: 18rem;
+}
