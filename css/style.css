@@ -51,9 +51,19 @@ body {
     animation: moveInLeft .5s ease-out .75s;
     animation-fill-mode: backwards; }
 
+.heading-secondary {
+  font-family: "Poppins", sans-serif;
+  font-weight: 700;
+  font-size: 2rem;
+  margin: 0;
+  margin-bottom: 1.5rem; }
+
 .paragraph--animated {
   animation: moveInRight .5s ease-out .75s;
   animation-fill-mode: backwards; }
+
+.paragraph--content {
+  margin: 0; }
 
 .icon {
   margin: 0 .5rem;
@@ -142,16 +152,32 @@ body {
   box-shadow: 0 1rem 2rem rgba(0, 37, 46, 0.15);
   transform: translateY(0); }
 
-.wav {
-  background: rgba(0, 255, 255, 0.1);
-  clip-path: url(#wave-top1);
+.feature {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly; }
+
+.feature-box {
+  margin-bottom: 6rem; }
+
+.wave--1 {
+  background: rgba(0, 139, 139, 0.05);
   height: 55rem;
   width: 100vw;
-  display: flex;
-  flex-direction: row; }
+  margin-left: calc(-50vw + 50%);
+  clip-path: url(#wave-top1); }
+
+.wave--2 {
+  background: rgba(0, 139, 139, 0.05);
+  height: 55rem;
+  width: 100vw;
+  margin-left: calc(-50vw + 50%);
+  clip-path: url(#wave-top2); }
 
 .feature-text {
-  margin-top: 18rem; }
+  margin-top: 22rem;
+  text-align: left;
+  width: 33rem; }
 
 .section-about {
   display: flex;
@@ -173,6 +199,6 @@ body {
 .section-features {
   margin-top: 8rem; }
   .section-features img {
-    margin-top: 10rem;
-    width: 25rem;
-    height: 25rem; }
+    margin-top: 13.5rem;
+    width: 32rem;
+    height: 27rem; }

@@ -1,14 +1,37 @@
-.wav {
-  background: rgba(0, 255, 255, .1);
-  clip-path: url(#wave-top1);
-  height: 55rem;
-  width: 100vw;
-  // transform: translateX(-3rem);
-
+.feature {
   display: flex;
   flex-direction: row;
+  justify-content: space-evenly;
+}
+
+.feature-box {
+  margin-bottom: 6rem;
+}
+
+.wave--1 {
+  background: rgba(darkcyan, 0.05);
+  height: 55rem;
+  width: 100vw;
+  margin-left: calc(-50vw + 50%);
+  clip-path: url(#wave-top1);
+}
+
+.wave--2 {
+  background: rgba(darkcyan, 0.05);
+  height: 55rem;
+  width: 100vw;
+  margin-left: calc(-50vw + 50%);
+  clip-path: url(#wave-top2);
 }
 
 .feature-text {
-  margin-top: 18rem;
+  margin-top: 22rem;
+  text-align: left;
+  width: 33rem;
+  // margin-left: 8rem;
+
+  // &:not(:first-child) {
+  //   margin-top: 16rem;
+  //   margin-left: 6rem;
+  // }
 }

@@ -16,10 +16,22 @@ body {
   }
 }
 
+.heading-secondary {
+  font-family: "Poppins", sans-serif;
+  font-weight: 700;
+  font-size: 2rem;
+  margin : 0;
+  margin-bottom: 1.5rem;
+}
+
 .paragraph {
   &--animated {
     animation: moveInRight .5s ease-out .75s;
     animation-fill-mode: backwards;
+  }
+
+  &--content {
+    margin: 0;
   }
 }
 
