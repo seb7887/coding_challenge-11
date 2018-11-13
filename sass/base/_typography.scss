@@ -33,6 +33,10 @@ body {
   &--content {
     margin: 0;
   }
+
+  &--footer {
+    color: $color-pale-blue;
+  }
 }
 
 .icon {

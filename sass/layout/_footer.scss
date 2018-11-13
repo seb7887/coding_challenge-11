@@ -1,0 +1,18 @@
+.footer {
+  background: $color-dark-cyan;
+  display: inline-block;
+  clip-path: url(#footer);
+  width: 100vw;
+  height: 38rem;
+  margin-left: calc(-50vw + 50%);
+  margin-bottom: -40rem;
+
+  img {
+    filter: invert(100%) saturate(0%);
+  }
+}
+
+#contact {
+  margin: 0;
+  text-align: left;
+}

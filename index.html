@@ -105,37 +105,46 @@
     </div>
   </section>
 
-  <section>
-    <h2>Ready To Build Your Community?</h2>
-    <button>Get Started For Free</button>
+  <section class="section-ready">
+    <h2 class="heading-secondary">Ready To Build Your Community?</h2>
+    <a href="#" class="btn btn--animated">Get Started For Free</a>
   </section>
 
-  <section>
-    <div>
-      <img src="images/logo.svg" alt="Logo">
-      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris nulla quam, hendrerit lacinia vestibulum a, ultrices quis sem.</p>
-      
-      <div>
-        <p><i class="fas fa-phone-volume"></i> Phone: +1-543-123-4567</p>
-        <p><i class="fas fa-envelope"></i> example@huddle.com</p>
+  <!-- SVG clip path -->
+  <svg width="0" height="0" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <defs>
+      <clipPath id="footer">
+        <path d="M0 99.424C249.852-14.173 492.347-30.427 727.484 50.661c352.706 121.632 501.421 140.534 727.484 0 150.71-93.69 150.71 129.423 0 669.339H0V99.424z"/>
+      </clipPath>
+    </defs>
+  </svg>
+  
+  <footer class="footer">
+    <section class="section-footer">
+      <div id="contact">
+        <img src="images/logo.svg" alt="Logo">
+        <p class="paragraph--footer">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris nulla quam, hendrerit lacinia vestibulum a, ultrices quis sem.</p>
+        
+        <div>
+          <p class="paragraph--footer"><i class="fas fa-phone-volume"></i> Phone: +1-543-123-4567</p>
+          <p class="paragraph--footer"><i class="fas fa-envelope"></i> example@huddle.com</p>
+        </div>
+        
+        <div>
+          <i class="fab fa-facebook"></i>
+          <i class="fab fa-instagram"></i>
+          <i class="fab fa-twitter"></i>
+        </div>
       </div>
-      
+
       <div>
-        <i class="fab fa-facebook"></i>
-        <i class="fab fa-instagram"></i>
-        <i class="fab fa-twitter"></i>
+        <p class="paragraph--footer">Newsletter</p>
+        <p class="paragraph--footer">To recieve tips on how to grow your community, sign up to our weekly newsletter. We’ll never send you spam or pass on your email address</p>
+        <input type="text" />
+        <button>Subscribe</button>
       </div>
-    </div>
+    </section>
 
-    <div>
-      <p>Newsletter</p>
-      <p>To recieve tips on how to grow your community, sign up to our weekly newsletter. We’ll never send you spam or pass on your email address</p>
-      <input type="text" />
-      <button>Subscribe</button>
-    </div>
-  </section>
-
-  <footer>
     <p class="attribution">
       This page started life as a challenge on <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a> 🎉
     </p>
