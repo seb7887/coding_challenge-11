@@ -1,18 +1,50 @@
 .footer {
   background: $color-dark-cyan;
+  color: $color-pale-blue;
   display: inline-block;
   clip-path: url(#footer);
   width: 100vw;
   height: 38rem;
   margin-left: calc(-50vw + 50%);
   margin-bottom: -40rem;
+}
+
+.footer-logo {
+  margin-top: 0;
+  filter: invert(100%) saturate(0%);
+}
+
+.info-footer {
+  margin: 0;
+  text-align: left;
+  width: 35%;
+}
+
+.contact {
+  display: flex;
+  flex-direction: row;
+  margin: 0;
 
   img {
-    filter: invert(100%) saturate(0%);
+    margin: 0 0 1.5rem;
+    width: 1.2rem;
+    height: 1rem;
   }
 }
 
-#contact {
-  margin: 0;
-  text-align: left;
+.social-icons {
+  margin-top: 2.5rem;
+  margin-left: 0;
+  padding-right: 14rem;
+
+  i {
+    margin: 0;
+    color: $color-pale-blue;
+    font-size: 2rem;
+    transition: all .2s;
+
+    &:hover {
+      opacity: 0.5
+    }
+  }
 }
