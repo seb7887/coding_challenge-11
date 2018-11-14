@@ -9,6 +9,8 @@
 
 .section-mockups {
   margin-top: 5rem;
+  animation: fadeIn 0.5s ease-out 0.75s;
+  animation-fill-mode: backwards;
 
   img {
     width: 80%;
