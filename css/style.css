@@ -119,7 +119,7 @@ body {
 .info-footer {
   margin: 0;
   text-align: left;
-  width: 35%; }
+  width: 30%; }
 
 .contact {
   display: flex;
@@ -133,7 +133,7 @@ body {
 .social-icons {
   margin-top: 2.5rem;
   margin-left: 0;
-  padding-right: 14rem; }
+  padding-right: 10rem; }
   .social-icons i {
     margin: 0;
     color: #f5faff;
@@ -235,6 +235,39 @@ body {
   margin-top: 22rem;
   text-align: left;
   width: 33rem; }
+
+.form {
+  display: flex;
+  flex-direction: row; }
+  .form__input {
+    font-size: 1.5rem;
+    margin: 0;
+    margin-top: 2rem;
+    padding: 8px;
+    border-radius: 5px;
+    border: none;
+    transition: all .2s; }
+    .form__input:focus {
+      outline: none; }
+    .form__input:focus:invalid {
+      border-bottom: 3px solid #ff52bf; }
+    .form__input::-webkit-input-placeholder {
+      opacity: .5; }
+  .form__btn {
+    border: none;
+    border-radius: 5px;
+    padding: 1rem 3rem;
+    font-size: 1rem;
+    margin: 0;
+    margin-top: 2rem;
+    margin-left: 2rem;
+    background-color: #ff52bf;
+    color: #f5faff;
+    font-weight: 700;
+    letter-spacing: 1px;
+    transition: all .2s; }
+    .form__btn:hover {
+      opacity: 0.8; }
 
 .section-about {
   display: flex;
