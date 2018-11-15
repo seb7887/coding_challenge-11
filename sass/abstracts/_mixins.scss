@@ -5,9 +5,15 @@
 */
 @mixin respond($breakpoint) {
   @if $breakpoint == mobile {
-    @media only screen and (max-width: 375px) { @content };
+    @media only screen and (max-width: 1220px) { @content };
+  }
+  @if $breakpoint == tab {
+    @media only screen and (max-width: 1325px) { @content };
   }
   @if $breakpoint == desktop {
     @media only screen and (max-width: 1400px) { @content };
+  }
+  @if $breakpoint == big-desktop {
+    @media only screen and (min-width: 1800px) { @content };
   }
 }

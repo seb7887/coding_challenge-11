@@ -28,19 +28,23 @@
   margin-top: 8rem;
 
   img {
-    margin-top: 13.5rem;
-    width: 32rem;
-    height: 27rem;
+    margin-top: 2rem;
+    width: 34rem;
+    height: 25rem;
   }
 }
 
 .section-ready {
-  margin-bottom: 4rem;
+  margin-top: 8rem;
+  margin-bottom: 8rem;
 }
 
 .section-footer {
+  background-color: $color-dark-cyan;
   display: flex;
   flex-direction: row;
   justify-content: space-evenly;
-  margin: 15rem auto 0;
+  margin: calc(100% - 89.5%) auto 0;
+  padding-top: 8rem;
+  padding-bottom: 12rem;
 }
