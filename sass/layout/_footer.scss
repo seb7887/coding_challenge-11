@@ -18,6 +18,10 @@
   margin: 0;
   text-align: left;
   width: 30%;
+
+  @include respond(tab) {
+    width: 33%;
+  }
 }
 
 .contact-block {
@@ -40,6 +44,10 @@
   margin-top: 2.5rem;
   margin-left: 0;
   padding-right: 10rem;
+
+  @include respond(tab) {
+    padding-right: 8rem;
+  }
 
   i {
     margin: 0;

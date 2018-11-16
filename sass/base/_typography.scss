@@ -10,6 +10,10 @@ body {
   font-size: 3rem;
   transition: all .2s;
 
+  @include respond(tab) {
+    font-size: 2.5rem;
+  }
+
   &--animated {
     animation: moveInLeft .5s ease-out .75s;
     animation-fill-mode: backwards;

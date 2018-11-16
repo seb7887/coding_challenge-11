@@ -29,8 +29,13 @@
 
   img {
     margin-top: 2rem;
-    width: 34rem;
-    height: 25rem;
+    width: 32rem;
+    height: 26rem;
+
+    @include respond(tab) {
+      width: 25rem;
+      height: 20rem;
+    }
   }
 }
 

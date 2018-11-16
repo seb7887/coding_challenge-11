@@ -11,11 +11,11 @@
     background-color: $color-pale-blue;
 
     @include respond(tab) {
-      height: 36rem;
+      height: 30rem;
     }
 
     @include respond(big-desktop) {
-      height: 40rem;
+      height: 38rem;
     }
   }
 }
@@ -37,8 +37,12 @@
               url(/images//bg-section-bottom-desktop-1.svg) bottom center no-repeat;
   background-size: 100vw;
 
+  @include respond(tab) {
+    height: 42rem;
+  }
+
   @include respond(big-desktop) {
-    height: 61rem;
+    height: 59rem;
   }
 }
 
@@ -48,12 +52,20 @@
               url(/images//bg-section-bottom-desktop-2.svg) bottom center no-repeat;
   background-size: 100vw;
 
+  @include respond(tab) {
+    height: 42rem;
+  }
+
   @include respond(big-desktop) {
-    height: 62rem;
+    height: 59rem;
   }
 }
 
 .feature-text {
   text-align: left;
   width: 33rem;
+  
+  @include respond(tab) {
+    width: 25rem;
+  }
 }
