@@ -20,6 +20,10 @@
   width: 30%;
 
   @include respond(tab) {
+    width: 35% !important;
+  }
+
+  @include respond(laptop) {
     width: 33%;
   }
 }
@@ -46,6 +50,10 @@
   padding-right: 10rem;
 
   @include respond(tab) {
+    padding-right: 4rem !important;
+  }
+
+  @include respond(laptop) {
     padding-right: 8rem;
   }
 

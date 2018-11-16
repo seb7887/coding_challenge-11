@@ -32,9 +32,14 @@
     width: 32rem;
     height: 26rem;
 
-    @include respond(tab) {
+    @include respond(laptop) {
       width: 25rem;
       height: 20rem;
+    }
+
+    @include respond(tab) {
+      width: 16rem;
+      height: 14rem;
     }
   }
 }
