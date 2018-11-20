@@ -45,6 +45,8 @@
     margin-top: 2rem;
     width: 32rem;
     height: 26rem;
+    animation: fadeIn 0.5s ease-out 0.75s;
+    animation-fill-mode: backwards;
 
     @include respond(laptop) {
       width: 25rem;
@@ -63,6 +65,9 @@
   margin-bottom: 8rem;
 
   h2 {
+    animation: moveInRight 0.5s ease-out 0.75s;
+    animation-fill-mode: backwards;
+
     @include respond(mobile) {
       margin-bottom: 3rem;
     }

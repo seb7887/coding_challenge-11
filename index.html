@@ -11,12 +11,14 @@
   <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,700" rel="stylesheet">
   <!-- Icons -->
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
+  <!-- Stylesheets -->
+  <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
   <link rel="stylesheet" href="./css/style.css">  
   <title>Frontend Mentor | Huddle landing page with alternating sections</title>
 </head>
 
 <body>
-  <header class="header">
+  <header class="header" data-aos="fade">
     <div class="logo">
       <img src="images/logo.svg" alt="Logo">
     </div>
@@ -24,18 +26,18 @@
   </header>
 
   <section class="section-about">
-    <h1 class="heading heading--animated">Build The Community Your Fans Will Love</h1>
+    <h1 class="heading" data-aos="fade-right">Build The Community Your Fans Will Love</h1>
 
     <div class="row">
-      <p class="paragraph--animated">Huddle re-imagines the way we build communities. You have a voice, but so does 
+      <p class="paragraph--animated" data-aos="fade-left">Huddle re-imagines the way we build communities. You have a voice, but so does 
       your audience. Create connections with your users as you engage in genuine discussion. </p>
 
-      <a href="#" class="btn btn--animated">Get Started For Free</a>
+      <a href="#" class="btn btn--animated" data-aos="fade-up">Get Started For Free</a>
     </div>
   </section>
 
   <section class="section-mockups">
-    <img src="images/screen-mockups.svg" alt="Screen Mockups">
+    <img src="images/screen-mockups.svg" alt="Screen Mockups" data-aos="zoom-in">
   </section>
   
   <section class="section-info">
@@ -63,20 +65,20 @@
   <section class="section-features">
     <div class="wave--1 feature-block">
       <div class="feature feature__container feature__container--top">
-        <div class="col-1-of-2 feature-text">
+        <div class="col-1-of-2 feature-text" data-aos="fade-right">
           <h1 class="heading-secondary">Grow Together</h1>
           <p class="paragraph--content">Generate meaningful discussions with your audience and build a strong, loyal community. Think of the insightful conversations you miss out on with a feedback form.</p>
         </div>
         <div class="col-1-of-2">
-          <img src="images/illustration-grow-together.svg" alt="Grow" />
+          <img src="images/illustration-grow-together.svg" alt="Grow" data-aos="fade" />
         </div>
       </div>
       
     </div>
     
     <div class="feature feature-box">
-      <img src="images/illustration-flowing-conversation.svg" alt="Conversations">
-      <div class="col-1-of-2 feature-text">
+      <img src="images/illustration-flowing-conversation.svg" alt="Conversations" data-aos="fade">
+      <div class="col-1-of-2 feature-text" data-aos="fade-left">
         <h1 class="heading-secondary">Flowing Conversations</h1>
         <p class="paragraph--content">You wouldn't paginate a conversation in real life, so why do it online? Our threads have just-in-time loading for a more natural flow.</p>
       </div>
@@ -84,25 +86,25 @@
 
     <div class="wave--2 feature-block">
       <div class="feature feature__container">
-        <div class="col-1-of-2 feature-text">
+        <div class="col-1-of-2 feature-text" data-aos="fade-right">
           <h1 class="heading-secondary">Your Users</h1>
           <p class="paragraph--content">It takes no time at all to integrate Huddle with your app's authentication solution. This means,once signed in to your app, your users can start chatting immediately.</p>
         </div>
         <div class="col-1-of-2">
-          <img src="images/illustration-your-users.svg" alt="Users">
+          <img src="images/illustration-your-users.svg" alt="Users" data-aos="fade">
         </div>
       </div>
     </div>
   </section>
 
   <section class="section-ready">
-    <h2 class="heading-secondary">Ready To Build Your Community?</h2>
-    <a href="#" class="btn btn--animated">Get Started For Free</a>
+    <h2 class="heading-secondary" data-aos="fade-left">Ready To Build Your Community?</h2>
+    <a href="#" class="btn btn--animated" data-aos="fade-up">Get Started For Free</a>
   </section>
 
   <footer class="footer">
     <section class="section-footer">
-      <div class="info-footer info-footer--contact">
+      <div class="info-footer info-footer--contact" data-aos="fade-down">
         <img src="images/logo-white.svg" alt="Logo" class="footer-logo">
         <p class="paragraph--footer">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris nulla quam, hendrerit lacinia vestibulum a, ultrices quis sem.</p>
         
@@ -124,7 +126,7 @@
         </div>
       </div>
 
-      <div class="info-footer">
+      <div class="info-footer" data-aos="fade-down">
         <h3 class="heading-tertiary heading-tertiary--footer">Newsletter</h3>
         <p class="paragraph--footer">To recieve tips on how to grow your community, sign up to our weekly newsletter. We’ll never send you spam or pass on your email address</p>
         <form action="#" class="form">
@@ -134,5 +136,11 @@
       </div>
     </section>
   </footer>
+
+  <!-- AOS Scroll Appear -->
+  <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+  <script>
+    AOS.init();
+  </script>
 </body>
 </html>

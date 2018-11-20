@@ -1,6 +1,8 @@
 .form {
   display: flex;
   flex-direction: row;
+  animation: fadeInDown 0.5s ease-out 0.75s;
+  animation-fill-mode: backwards;
 
   @include respond(mobile) {
     flex-direction: column;

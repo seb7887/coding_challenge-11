@@ -22,6 +22,8 @@
   margin: 0;
   text-align: left;
   width: 30%;
+  animation: fadeInDown 0.5s ease-out 0.75s;
+  animation-fill-mode: backwards;
 
   &--contact {
     @include respond(mobile) {
