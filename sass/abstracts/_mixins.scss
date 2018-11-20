@@ -5,7 +5,7 @@
 */
 @mixin respond($breakpoint) {
   @if $breakpoint == mobile {
-    @media only screen and (max-width: 600px) { @content };
+    @media only screen and (max-width: 450px) { @content };
   }
   @if $breakpoint == tab {
     @media only screen and (max-width: 900px) { @content };

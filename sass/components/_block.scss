@@ -3,6 +3,10 @@
   flex-direction: column;
   justify-content: center;
   margin: 0;
+
+  @include respond(mobile) {
+    padding-top: 8rem;
+  }
 }
 
 .value-block {

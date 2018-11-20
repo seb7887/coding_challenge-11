@@ -1,12 +1,17 @@
 .footer {
-  background: url('/images/bg-footer-top-desktop.svg') top center no-repeat;
+  background: url(../images/bg-footer-top-desktop.svg) top center no-repeat;
   background-size: 100vw;
-  color: $color-pale-blue;
+  color: $color-white;
   display: inline-block;
   width: 100vw;
   height: 38rem;
   margin-left: calc(-50vw + 50%);
   margin-bottom: -40rem;
+
+  @include respond(mobile) {
+    background: url(../images/bg-footer-top-mobile.svg) top center no-repeat;
+    background-size: 100vw;
+  }
 }
 
 .footer-logo {
@@ -19,8 +24,19 @@
   text-align: left;
   width: 30%;
 
+  &--contact {
+    @include respond(mobile) {
+      order: 1;
+      margin-top: 8rem;
+    }
+  }
+
+  @include respond(mobile) {
+    width: 80% !important;
+  }
+
   @include respond(tab) {
-    width: 35% !important;
+    width: 35%;
   }
 
   @include respond(laptop) {
@@ -41,6 +57,11 @@
     margin: 0 0 1.5rem;
     width: 1.2rem;
     height: 1rem;
+
+    @include respond(mobile) {
+      width: 1.5rem;
+      height: 1.3rem;
+    }
   }
 }
 
@@ -63,6 +84,10 @@
     color: $color-pale-blue;
     font-size: 2.1rem;
     transition: all .2s;
+
+    @include respond(mobile) {
+      font-size: 2.5rem;
+    }
 
     &:hover {
       opacity: 0.5

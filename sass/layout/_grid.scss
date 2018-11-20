@@ -4,5 +4,9 @@
 }
 
 .col-1-of-2 {
-  width: calc((100% - 2 * #{$gutter-horizontas}) / 2);
+  width: calc((100% - 2 * #{$gutter-horizontal}) / 2);
+
+  @include respond(mobile) {
+    width: 20rem;
+  }
 }

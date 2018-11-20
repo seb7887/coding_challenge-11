@@ -10,8 +10,12 @@ body {
   font-size: 3rem;
   transition: all .2s;
 
+  @include respond(mobile) {
+    font-size: 1.5rem !important;
+  }
+
   @include respond(tab) {
-    font-size: 1.8rem !important;
+    font-size: 1.8rem;
   }
 
   @include respond(laptop) {
@@ -45,6 +49,10 @@ body {
   &--footer {
     text-transform: uppercase;
     letter-spacing: .2rem;
+
+    @include respond(mobile) {
+      font-size: 2rem;
+    }
   }
 }
 
@@ -63,11 +71,20 @@ body {
     line-height: 1.5rem;
     color: $color-pale-blue;
     font-weight: 600;
+
+    @include respond(mobile) {
+      font-size: 1rem;
+      line-height: 2rem;
+    }
   }
 
   &--contact {
     color: $color-pale-blue;
     margin: 0 1.5rem 0;
+
+    @include respond(mobile) {
+      font-size: 1rem;
+    }
   }
 }
 
@@ -81,9 +98,17 @@ body {
   margin: 0;
   font-size: 4.5rem;
   font-weight: 700;
+
+  @include respond(mobile) {
+    font-size: 4rem;
+  }
 }
 
 .detail {
   font-size: 1.2rem;
   opacity: .7;
+
+  @include respond(mobile) {
+    font-size: 1.3rem;
+  }
 }

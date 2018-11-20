@@ -7,11 +7,27 @@
   width: 100vw;
   margin: 0 auto;
 
+  @include respond(mobile) {
+    flex-direction: column;
+  }
+
   &__container {
     background-color: $color-pale-blue;
 
+    &--top {
+      @include respond(mobile) {
+        transform: translateY(2rem);
+      }
+    }
+
+    @include respond(mobile) {
+      height: 30rem !important;
+      padding-top: 4rem;
+      padding-bottom: 4rem;
+    }
+
     @include respond(tab) {
-      height: 21rem !important;
+      height: 21rem;
     }
 
     @include respond(laptop) {
@@ -41,8 +57,15 @@
               url(../images//bg-section-bottom-desktop-1.svg) bottom center no-repeat;
   background-size: 100vw;
 
+  @include respond(mobile) {
+    background: url(../images/bg-section-top-mobile-1.svg) top center no-repeat,
+                url(../images/bg-section-bottom-mobile-1.svg) bottom center no-repeat;
+    background-size: 100vw;
+    height: 48rem !important;
+  }
+
   @include respond(tab) {
-    height: 29.8rem !important;
+    height: 29.8rem;
   }
 
   @include respond(laptop) {
@@ -60,8 +83,15 @@
               url(../images//bg-section-bottom-desktop-2.svg) bottom center no-repeat;
   background-size: 100vw;
 
+  @include respond(mobile) {
+    background: url(../images/bg-section-top-mobile-2.svg) top center no-repeat,
+                url(../images/bg-section-bottom-mobile-2.svg) bottom center no-repeat;
+    background-size: 100vw;
+    height: 50rem !important;
+  }
+
   @include respond(tab) {
-    height: 30rem !important;
+    height: 30rem;
   }
 
   @include respond(laptop) {
@@ -76,6 +106,13 @@
 .feature-text {
   text-align: left;
   width: 33rem;
+
+  @include respond(mobile) {
+    order: 1;
+    width: 20rem !important;
+    margin: 4rem 2rem;
+    text-align: center;
+  }
   
   @include respond(laptop) {
     width: 25rem;
